@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">KalkulatorBangun</string>
+
+    <array name="nama_bgn_datar">
+        <item>Persegi</item>
+        <item>Segitiga</item>
+        <item>Lingkaran</item>
+        <item>Segitiga Siku-Siku</item>
+    </array>
+
+    <array name="desc_bgn_datar">
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </array>
+
+    <array name="nama_bgn_ruang">
+        <item>Kubus</item>
+        <item>Balok</item>
+        <item>Bola</item>
+        <item>Tabung</item>
+    </array>
+
+    <array name="desc_bgn_ruang">
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </array>
+</resources>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <style name="AppTheme.BottomNavigationView" parent="Widget.Design.BottomNavigationView">
-        <item name="android:background">@color/Brown</item>
+        <item name="android:background">@color/DarkBrown</item>
         <item name="itemTextColor">@color/LightBeige</item>
         <item name="itemIconTint">@color/LightBeige</item>
         <item name="itemTextAppearanceActive">@style/BottomNavItemTextActive</item> <!-- Custom background drawable for items -->

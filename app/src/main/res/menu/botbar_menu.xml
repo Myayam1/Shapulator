@@ -4,18 +4,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:title="2D Shapes"
-        android:icon="@drawable/ic_android_black_24dp"
+        android:icon="@drawable/square"
         android:id="@+id/bgn_datar"/>
     <item
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:title="3D Shapes"
-        android:icon="@drawable/ic_android_black_24dp"
+        android:icon="@drawable/cube"
         android:id="@+id/bgn_ruang"/>
     <item
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:title="Profile"
-        android:icon="@drawable/ic_android_black_24dp"
+        android:icon="@drawable/baseline_person_24"
         android:id="@+id/profile"/>
 </menu>

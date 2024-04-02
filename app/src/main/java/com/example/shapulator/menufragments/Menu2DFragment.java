@@ -1,6 +1,8 @@
-package com.example.kalkulatorbangun.menufragments;
+package com.example.shapulator.menufragments;
 
 import android.content.Intent;
+import android.content.res.TypedArray;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,11 +13,11 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.kalkulatorbangun.R;
-import com.example.kalkulatorbangun.bangundataractivities.CircleActivity;
-import com.example.kalkulatorbangun.bangundataractivities.RightTriangleActivity;
-import com.example.kalkulatorbangun.bangundataractivities.SquareActivity;
-import com.example.kalkulatorbangun.bangundataractivities.TriangleActivity;
+import com.example.shapulator.R;
+import com.example.shapulator.bangundataractivities.CircleActivity;
+import com.example.shapulator.bangundataractivities.RightTriangleActivity;
+import com.example.shapulator.bangundataractivities.SquareActivity;
+import com.example.shapulator.bangundataractivities.TriangleActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -44,16 +46,18 @@ public class Menu2DFragment extends Fragment implements MenuAdapter.ItemClickLis
 
         String[] shapeNames = getResources().getStringArray(R.array.nama_bgn_datar);
         String[] shapeDescs = getResources().getStringArray(R.array.desc_bgn_datar);
+        TypedArray shapeDrawables = getResources().obtainTypedArray(R.array.img_bgn_datar);
 
         for (int i = 0; i < shapeNames.length; i++) {
-            myModels.add(new MenuModel(shapeNames[i], shapeDescs[i]));
+            Drawable drawable = shapeDrawables.getDrawable(i);
+            myModels.add(new MenuModel(shapeNames[i], shapeDescs[i], drawable));
         }
 
         return myModels;
     }
 
     @Override
-    public void onItemClick(View view, int position) {
+    public void onItemClick(int position) {
         Intent intent;
 
         switch (adapter.getItem(position).getName()) {

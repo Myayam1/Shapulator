@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="50dp"
+    android:background="@drawable/bg_gradient"
     tools:context=".bangundataractivities.CircleActivity">
 
     <TextView
@@ -14,6 +15,7 @@
         android:text="Kalkulator Lingkaran "
         android:textSize="30dp"
         android:textStyle="bold"
+        android:textColor="@color/DarkBrown"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -25,6 +27,8 @@
         android:hint="Enter Radius..."
         android:inputType="number"
         android:layout_marginTop="30dp"
+        android:padding="10dp"
+        android:background="@drawable/edit_text_shape"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_title" />
@@ -38,7 +42,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/radius"
-        android:backgroundTint="@color/DarkSlateGray"/>
+        android:backgroundTint="@color/DarkBrown"
+        android:textColor="@color/Beige"/>
 
     <TextView
         android:id="@+id/tv_result_title"
@@ -47,6 +52,7 @@
         android:text="Hasil :"
         android:textStyle="bold"
         android:textSize="20dp"
+        android:textColor="@color/DarkBrown"
         android:layout_marginTop="10dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_count" />
@@ -57,6 +63,7 @@
         android:layout_height="wrap_content"
         android:text=""
         android:textSize="30dp"
+        android:textColor="@color/DarkBrown"
         android:layout_marginTop="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

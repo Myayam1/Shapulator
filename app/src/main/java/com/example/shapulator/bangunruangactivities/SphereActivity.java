@@ -1,4 +1,4 @@
-package com.example.kalkulatorbangun.bangunruangactivities;
+package com.example.shapulator.bangunruangactivities;
 
 import android.os.Bundle;
 import android.widget.Button;
@@ -9,32 +9,32 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.WindowCompat;
 
-import com.example.kalkulatorbangun.R;
+import com.example.shapulator.R;
 
 import java.util.Locale;
 
-public class CubeActivity extends AppCompatActivity {
+public class SphereActivity extends AppCompatActivity {
 
-    EditText etSide;
+    EditText etRadius;
     TextView tvResult;
     Button btnCalculate;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cube);
+        setContentView(R.layout.activity_sphere);
 
-        etSide = findViewById(R.id.et_side);
+        etRadius = findViewById(R.id.et_radius);
         tvResult = findViewById(R.id.tv_result);
         btnCalculate = findViewById(R.id.btn_calculate);
 
         btnCalculate.setOnClickListener(v -> {
-            if (!etSide.getText().toString().isEmpty()) {
-                double side = Double.parseDouble(etSide.getText().toString());
-                double volume = side * side * side;
-                tvResult.setText(String.format(Locale.getDefault(), "Volume: %.2f", volume));
+            if (!etRadius.getText().toString().isEmpty()) {
+                double radius = Double.parseDouble(etRadius.getText().toString());
+                double volume = (4.0 / 3.0) * Math.PI * Math.pow(radius, 3);
+                tvResult.setText(String.format(Locale.getDefault(), "%.2f", volume));
             } else {
-                Toast.makeText(this, "Please enter the side length", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Please enter the radius", Toast.LENGTH_SHORT).show();
             }
         });
 

@@ -1,4 +1,4 @@
-package com.example.kalkulatorbangun;
+package com.example.shapulator;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.WindowCompat;
@@ -6,10 +6,10 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
-import com.example.kalkulatorbangun.databinding.ActivityMainBinding;
-import com.example.kalkulatorbangun.menufragments.Menu2DFragment;
-import com.example.kalkulatorbangun.menufragments.Menu3DFragment;
-import com.example.kalkulatorbangun.menufragments.MenuProfileFragment;
+import com.example.shapulator.databinding.ActivityMainBinding;
+import com.example.shapulator.menufragments.Menu2DFragment;
+import com.example.shapulator.menufragments.Menu3DFragment;
+import com.example.shapulator.menufragments.MenuProfileFragment;
 
 import android.os.Bundle;
 

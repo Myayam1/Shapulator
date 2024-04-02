@@ -1,14 +1,16 @@
-package com.example.kalkulatorbangun.menufragments;
+package com.example.shapulator.menufragments;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.kalkulatorbangun.R;
+import com.example.shapulator.R;
 
 import java.util.List;
 
@@ -34,6 +36,7 @@ public class MenuAdapter extends RecyclerView.Adapter<MenuAdapter.ViewHolder> {
         final MenuModel model = this.menuModels.get(position);
         holder.tvName.setText(model.getName());
         holder.tvDesc.setText(model.getDesc());
+        holder.ivImg.setImageDrawable(model.getSrc());
     }
 
     @Override
@@ -43,17 +46,21 @@ public class MenuAdapter extends RecyclerView.Adapter<MenuAdapter.ViewHolder> {
 
     public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         public TextView tvName, tvDesc;
+        public ImageView ivImg;
+        public Button btnHitung;
 
         public ViewHolder(View itemView) {
             super(itemView);
             tvName = itemView.findViewById(R.id.tv_name);
             tvDesc = itemView.findViewById(R.id.tv_desc);
-            itemView.setOnClickListener(this);
+            ivImg = itemView.findViewById(R.id.iv_img);
+            btnHitung = itemView.findViewById(R.id.btn_calculate);
+            btnHitung.setOnClickListener(this);
         }
 
         @Override
         public void onClick(View v) {
-            if (mClickListener != null) mClickListener.onItemClick(v, getAdapterPosition());
+            if (mClickListener != null) mClickListener.onItemClick(getAdapterPosition());
         }
 
     }
@@ -69,6 +76,6 @@ public class MenuAdapter extends RecyclerView.Adapter<MenuAdapter.ViewHolder> {
 
     // parent activity will implement this method to respond to click events
     public interface ItemClickListener {
-        void onItemClick(View view, int position);
+        void onItemClick(int position);
     }
 }

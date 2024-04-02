@@ -1,4 +1,4 @@
-package com.example.kalkulatorbangun.bangundataractivities;
+package com.example.shapulator.bangundataractivities;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.WindowCompat;
@@ -9,7 +9,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.kalkulatorbangun.R;
+import com.example.shapulator.R;
 
 import java.util.Locale;
 
@@ -33,7 +33,7 @@ public class TriangleActivity extends AppCompatActivity {
                 double base = Double.parseDouble(etBase.getText().toString());
                 double height = Double.parseDouble(etHeight.getText().toString());
                 double area = 0.5 * base * height;
-                tvResult.setText(String.format(Locale.getDefault(), "Area: %.2f", area));
+                tvResult.setText(String.format(Locale.getDefault(), "%.2f", area));
             } else {
                 Toast.makeText(this, "Please enter both base and height", Toast.LENGTH_SHORT).show();
             }

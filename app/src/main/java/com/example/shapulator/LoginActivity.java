@@ -1,6 +1,6 @@
-package com.example.kalkulatorbangun;
+package com.example.shapulator;
 
-import com.example.kalkulatorbangun.R;
+import com.example.shapulator.R;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatButton;
 import androidx.core.view.WindowCompat;

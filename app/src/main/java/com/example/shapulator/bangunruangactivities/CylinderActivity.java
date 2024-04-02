@@ -1,4 +1,4 @@
-package com.example.kalkulatorbangun.bangunruangactivities;
+package com.example.shapulator.bangunruangactivities;
 
 import android.os.Bundle;
 import android.widget.Button;
@@ -9,7 +9,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.WindowCompat;
 
-import com.example.kalkulatorbangun.R;
+import com.example.shapulator.R;
 
 import java.util.Locale;
 
@@ -34,7 +34,7 @@ public class CylinderActivity extends AppCompatActivity {
                 double radius = Double.parseDouble(etRadius.getText().toString());
                 double height = Double.parseDouble(etHeight.getText().toString());
                 double volume = Math.PI * radius * radius * height;
-                tvResult.setText(String.format(Locale.getDefault(), "Volume: %.2f", volume));
+                tvResult.setText(String.format(Locale.getDefault(), "%.2f", volume));
             } else {
                 Toast.makeText(this, "Please enter the radius and height", Toast.LENGTH_SHORT).show();
             }

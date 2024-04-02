@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">KalkulatorBangun</string>
+    <string name="app_name">Shapulator</string>
 
     <array name="nama_bgn_datar">
         <item>Persegi</item>
@@ -9,10 +9,10 @@
     </array>
 
     <array name="desc_bgn_datar">
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
+        <item>Bangun datar dengan empat sisi yang memiliki 2 sisi sejajar sama panjang dan semua sudutnya siku-siku (90 derajat).</item>
+        <item>Bangun datar dengan tiga sisi dan tiga sudut. (Jenis segitiga didefinisikan berdasarkan sudutnya).</item>
+        <item>Bangun datar yang tidak memiliki sudut dan memiliki sisi melengkung dengan jarak yang sama dari titik pusat (pusat lingkaran).</item>
+        <item>Jenis segitiga dengan satu sudut tepat 90 derajat.</item>
     </array>
 
     <array name="nama_bgn_ruang">
@@ -23,9 +23,23 @@
     </array>
 
     <array name="desc_bgn_ruang">
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
+        <item>Bangun ruang dengan enam sisi berbentuk persegi sama sisi dan semua sudutnya siku-siku.</item>
+        <item>Bangun ruang dengan enam sisi berbentuk persegi panjang, tetapi tidak semua sisi harus sama panjang.</item>
+        <item>Bentuk ruang yang bulat sempurna dengan semua titik pada permukaannya memiliki jarak yang sama dari pusat.</item>
+        <item>Bangun ruang dengan dua alas berbentuk lingkaran yang kongruen, dihubungkan oleh selimut berbentuk persegi panjang.</item>
+    </array>
+
+    <array name="img_bgn_datar">
+        <item>@drawable/square</item>
+        <item>@drawable/triangle</item>
+        <item>@drawable/circle</item>
+        <item>@drawable/right_triangle</item>
+    </array>
+
+    <array name="img_bgn_ruang">
+        <item>@drawable/cube</item>
+        <item>@drawable/cuboid</item>
+        <item>@drawable/sphere</item>
+        <item>@drawable/cylinder</item>
     </array>
 </resources>

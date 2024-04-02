@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:padding="50dp"
+    android:background="@drawable/bg_gradient"
     tools:context=".bangunruangactivities.CubeActivity">
 
     <TextView
@@ -23,6 +24,8 @@
         android:layout_height="wrap_content"
         android:hint="Enter Side Length"
         android:inputType="numberDecimal"
+        android:background="@drawable/edit_text_shape"
+        android:padding="10dp"
         android:layout_marginBottom="16dp"/>
 
     <Button
@@ -30,8 +33,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Calculate Volume"
+        android:textColor="@color/Beige"
         android:layout_gravity="center_horizontal"
-        android:backgroundTint="@color/DarkSlateGray"/>
+        android:backgroundTint="@color/DarkBrown"/>
 
     <TextView
         android:id="@+id/tv_result_title"
@@ -40,6 +44,7 @@
         android:text="Hasil :"
         android:textStyle="bold"
         android:textSize="20sp"
+        android:textColor="@color/DarkBrown"
         android:layout_marginTop="10dp"
         android:layout_gravity="center_horizontal"/>
 
@@ -49,6 +54,7 @@
         android:layout_height="wrap_content"
         android:text=""
         android:textSize="18sp"
+        android:textColor="@color/DarkBrown"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="16dp"/>
 

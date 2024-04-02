@@ -1,4 +1,4 @@
-package com.example.kalkulatorbangun.bangundataractivities;
+package com.example.shapulator.bangundataractivities;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.WindowCompat;
@@ -9,7 +9,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.kalkulatorbangun.R;
+import com.example.shapulator.R;
 
 import java.util.Locale;
 
@@ -31,7 +31,7 @@ public class CircleActivity extends AppCompatActivity {
             if (etRadius.getText().toString() != null) {
                 double radius = Double.parseDouble(etRadius.getText().toString());
                 double area = Math.PI * radius * radius;
-                tvResult.setText(String.format(Locale.getDefault(), "Area: %.2f", area));
+                tvResult.setText(String.format(Locale.getDefault(), "%.2f", area));
             } else {
                 Toast.makeText(this, "Please enter the radius length", Toast.LENGTH_SHORT).show();
             }

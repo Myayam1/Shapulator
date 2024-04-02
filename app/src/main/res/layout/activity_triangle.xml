@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="50dp"
+    android:background="@drawable/bg_gradient"
     tools:context=".bangundataractivities.TriangleActivity">
 
     <TextView
@@ -15,6 +16,7 @@
         android:text="Kalkulator Segitiga"
         android:textSize="30sp"
         android:textStyle="bold"
+        android:textColor="@color/DarkBrown"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -25,6 +27,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Masukkan Panjang Alas..."
+        android:background="@drawable/edit_text_shape"
+        android:padding="10dp"
+        android:layout_margin="5dp"
         android:inputType="number"
         app:layout_constraintTop_toBottomOf="@+id/txt_title"
         app:layout_constraintStart_toStartOf="parent"
@@ -36,6 +41,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Masukkan Tinggi..."
+        android:background="@drawable/edit_text_shape"
+        android:padding="10dp"
+        android:layout_margin="5dp"
         android:inputType="number"
         app:layout_constraintTop_toBottomOf="@+id/et_base"
         app:layout_constraintStart_toStartOf="parent"
@@ -47,11 +55,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hitung"
+        android:textColor="@color/Beige"
         app:layout_constraintTop_toBottomOf="@+id/et_height"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="16dp"
-        android:backgroundTint="@color/DarkSlateGray"/>
+        android:backgroundTint="@color/DarkBrown"/>
 
     <TextView
         android:id="@+id/tv_result_title"
@@ -60,6 +69,7 @@
         android:text="Hasil :"
         android:textStyle="bold"
         android:textSize="20dp"
+        android:textColor="@color/DarkBrown"
         android:layout_marginTop="10dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_count" />
@@ -70,6 +80,7 @@
         android:layout_height="wrap_content"
         android:text=""
         android:textSize="24sp"
+        android:textColor="@color/DarkBrown"
         app:layout_constraintTop_toBottomOf="@+id/btn_count"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
